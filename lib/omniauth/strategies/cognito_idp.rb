@@ -73,7 +73,7 @@ module OmniAuth
       end
 
       def id_token
-        access_token['id_token']
+        access_token.response.parsed[:id_token]
       end
 
       def parsed_id_token
